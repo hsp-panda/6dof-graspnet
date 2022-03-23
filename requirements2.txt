@@ -1,9 +1,1 @@
-trimesh==3.6.30 
-numpy==1.17.4
-pyrender==0.1.39 
-matplotlib==3.1.1 
-easydict==1.9 
-opencv-python==4.1.2.30 
-tensorboardX==2.0 
-python-fcl==0.6.1
-Rtree==0.9.7
+PyYAML==5.2 --ignore-installed
