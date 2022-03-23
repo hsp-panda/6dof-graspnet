@@ -1,3 +1,4 @@
+vtk==8.1.0
 gdown==4.4.0
 tensorflow-gpu==1.13.1 
 opencv-python==4.1.2.30 
