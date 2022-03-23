@@ -1,1 +1,1 @@
-PyYAML==5.2 --install-option="--ignore-installed"
+PyYAML==5.2 --global-option="--ignore-installed"
