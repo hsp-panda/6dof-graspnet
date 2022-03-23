@@ -6,7 +6,7 @@ h5py==2.10.0
 tqdm==4.45.0 
 vtk==8.1.0 
 mayavi==4.7.1
---ignore-installed PyYAML==5.2 
+PyYAML==5.2 --ignore-installed
 trimesh==3.6.30 
 numpy==1.17.4 
 pyrender==0.1.39 
