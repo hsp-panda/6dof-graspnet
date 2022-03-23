@@ -1,0 +1,9 @@
+pip3 install trimesh==3.6.30 &&\
+pip3 install numpy==1.17.4 &&\
+pip3 install pyrender==0.1.39 &&\
+pip3 install matplotlib==3.1.1 &&\
+pip3 install easydict==1.9 &&\
+pip3 install opencv-python==4.1.2.30 &&\
+pip3 install tensorboardX==2.0 &&\
+pip3 install python-fcl==0.6.1 &&\
+pip3 install Rtree==0.9.7
