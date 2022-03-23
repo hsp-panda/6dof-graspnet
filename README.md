@@ -19,11 +19,11 @@ rm tensorflow-1.12.0.a6d8ffa.AVX2.CUDA10-cp27-cp27mu-linux_x86_64.whl
 
 4) `cd 6dof-graspnet`
 
-5) Run `pip install -r requirements.txt` to install necessary python libraries.
+5) Run `pip install install --upgrade --no-cache-dir gdown`
 
-6) Run `pip install install --upgrade --no-cache-dir gdown`
+6) Run `pip install install --ignore-installed PyYAML==5.2`
 
-7) Run `pip install install --ignore-installed PyYAML==5.2`
+7) Run `pip install -r requirements.txt` to install necessary python libraries.
 
 8) [optional] For multi-gpu training only: Install horovod and MPI from [here](https://github.com/horovod/horovod). We used single-gpu training for training VAE and 8-gpu training for the evaluator network.
 
