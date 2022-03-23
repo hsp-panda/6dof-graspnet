@@ -21,9 +21,9 @@ rm tensorflow-1.12.0.a6d8ffa.AVX2.CUDA10-cp27-cp27mu-linux_x86_64.whl
 
 5) Run `pip install -r requirements.txt` to install necessary python libraries.
 
-6) Run `pip install install opencv-python==4.1.2.30`
+6) Run `pip install install --upgrade --no-cache-dir gdown`
 
-7) Run `--ignore-installed PyYAML==5.2`
+7) Run `pip install install --ignore-installed PyYAML==5.2`
 
 8) [optional] For multi-gpu training only: Install horovod and MPI from [here](https://github.com/horovod/horovod). We used single-gpu training for training VAE and 8-gpu training for the evaluator network.
 
