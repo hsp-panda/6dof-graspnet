@@ -101,8 +101,10 @@ def main(args):
     cfg['sample_based_improvement'] = 1 - int(args.gradient_based_refinement)
     cfg['num_refine_steps'] = 10 if args.gradient_based_refinement else 20
     estimator = grasp_estimator.GraspEstimator(cfg)
-    os.environ['CUDA_VISIBLE_DEVICES'] = str(cfg.gpu)
-    sess = tf.Session()
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(0)
+    config = tf.ConfigProto()
+    config.gpu_options.allow_growth = True
+    sess = tf.Session(config=config)
     estimator.build_network()
     estimator.load_weights(sess)
 
@@ -110,7 +112,7 @@ def main(args):
         print(npy_file)
         # Depending on your numpy version you may need to change allow_pickle
         # from True to False.
-        data = np.load(npy_file, allow_pickle=True).item()
+        data = np.load(npy_file, allow_pickle=True,encoding='latin1').item()
         print(data.keys())
         depth = data['depth']
         image = data['image']
