@@ -7,7 +7,7 @@ The source code is released under [MIT License](LICENSE) and the trained weights
 ## Installation
 This code has been tested with tenorflow 1.13.1, CUDA 10.0, and CUDNN 7.1.2 on Ubuntu 18.04.
 
-1) `pip3 install vtk==8.1.0`, `pip3 install --upgrade --no-cache-dir gdown==4.4.0`, `pip3 install tensorflow-gpu==1.13.1
+1) `pip3 install vtk==8.1.0`, `pip3 install --upgrade --no-cache-dir gdown==4.4.0`, `pip3 install tensorflow-gpu==1.13.1`
 ```
 2) Clone this repository: `git lfs clone https://github.com/NvLabs/6dof-graspnet`. Note the `lfs` in the command to make sure that the pre-trained models are cloned properly.
 
