@@ -5,7 +5,7 @@ Implementation of [6-DoF GraspNet](https://arxiv.org/abs/1905.10520) with tensor
 The source code is released under [MIT License](LICENSE) and the trained weights are released under [CC-BY-NC-SA 2.0](TRAINED_MODEL_LICENSE).
 
 ## Installation
-This code has been tested with tenorflow 1.13.1, CUDA 10.0, and CUDNN 7.1.2 on Ubuntu 18.04.
+This code has been tested with tenorflow 1.13.1, CUDA 11.2, and CUDNN 7.1.6 on Ubuntu 18.04.
 
 1) `pip3 install vtk==8.1.0`, `pip3 install --upgrade --no-cache-dir gdown==4.4.0`, `pip3 install tensorflow-gpu==1.13.1`
 
