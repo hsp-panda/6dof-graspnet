@@ -5,13 +5,9 @@ Implementation of [6-DoF GraspNet](https://arxiv.org/abs/1905.10520) with tensor
 The source code is released under [MIT License](LICENSE) and the trained weights are released under [CC-BY-NC-SA 2.0](TRAINED_MODEL_LICENSE).
 
 ## Installation
-This code has been tested with tenorflow 1.12, CUDA 10.0, and CUDNN 7.1.2 on Ubuntu 16.04.
+This code has been tested with tenorflow 1.13.1, CUDA 10.0, and CUDNN 7.1.2 on Ubuntu 18.04.
 
-1) Tensorflow installation: In case you want to install tensorflow 1.12 you can use the command bellow:
-```shell
-wget https://storage.googleapis.com/tf-performance/tf_binary/tensorflow-1.12.0.a6d8ffa.AVX2.CUDA10-cp27-cp27mu-linux_x86_64.whl
-pip install tensorflow-1.12.0.a6d8ffa.AVX2.CUDA10-cp27-cp27mu-linux_x86_64.whl
-rm tensorflow-1.12.0.a6d8ffa.AVX2.CUDA10-cp27-cp27mu-linux_x86_64.whl
+1) `pip3 install vtk==8.1.0`, `pip3 install --upgrade --no-cache-dir gdown==4.4.0`, `pip3 install tensorflow-gpu==1.13.1
 ```
 2) Clone this repository: `git lfs clone https://github.com/NvLabs/6dof-graspnet`. Note the `lfs` in the command to make sure that the pre-trained models are cloned properly.
 
