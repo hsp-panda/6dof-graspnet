@@ -76,7 +76,7 @@ def joint_config(vae_folder, evaluator_folder='', dataset_root_folder='', eval_s
     args['evaluator_checkpoint_folder'] = os.path.join(evaluator_folder, 'tf_output')
     args['sample_based_improvement'] = 1
     args['grasp_selection_mode'] = 'better_than_threshold_in_sequence'
-    args['num_samples'] = 20
+    args['num_samples'] = 1000
     args['eval_split'] = eval_split
     #args['threshold'] = -1
     args['num_refine_steps'] = 20
