@@ -21,7 +21,11 @@ This code has been tested with tenorflow 1.13.1, CUDA 11.2, and CUDNN 7.1.6 on U
 
 7) Build the tf_ops using `sh compile_pointnet_tfops.sh`.
 
-8) Download the checkpoints to the `checkpoints` folder. Trained checkpoints are released under [CC-BY-NC-SA 2.0](TRAINED_MODEL_LICENSE) and can be downloaded from [here](https://drive.google.com/drive/folders/1mVX2kqXg9BZ22y3HEyqta20tiQrL8OK_?usp=sharing). **The checkpoints of the models trained on [ACRONYM Dataset](https://sites.google.com/nvidia.com/graspdataset) are uploaded.**
+8) Download the checkpoints to the `checkpoints` folder. Trained checkpoints are released under [CC-BY-NC-SA 2.0](TRAINED_MODEL_LICENSE) and can be downloaded from [here](https://drive.google.com/drive/folders/1mVX2kqXg9BZ22y3HEyqta20tiQrL8OK_?usp=sharing). **The checkpoints of the models trained on [ACRONYM Dataset](https://sites.google.com/nvidia.com/graspdataset) are uploaded.** For ease of download, we provide the checkpoints under the same license in `checkpoints.tar.gz`. They can easily extracted with
+
+```
+tar -xvzf checkpoints.tar.gz
+```
 
 
 ## Demo
@@ -77,7 +81,7 @@ python train.py \
   --train_evaluator 1 \
   --dataset_root_folder $DATRASET_ROOT_FOLDER \
   --logdir $EVALUATOR_TRAINING_FOLDER \
-  --ngpus 1 
+  --ngpus 1
 ```
 
 Train multi-gpu using horovod and mpirun (using 8 gpus) as in the paper:
@@ -100,7 +104,7 @@ Example command for running evaluation:
 ```shell
 python eval.py \
   --vae_training_folder $VAE_TRAINING_FOLDER \
-  --evaluator_training_folder $EVALUATOR_TRAINING_FOLDER \ 
+  --evaluator_training_folder $EVALUATOR_TRAINING_FOLDER \
   --eval_data_folder $EVAL_DATA_FOLDER \
   --generate_data_if_missing 1 \
   --dataset_root_folder $DATASET_FOLDER \
